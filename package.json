@@ -1,0 +1,28 @@
+{
+  "name": "word-pinyin",
+  "version": "0.1.0",
+  "description": "汉字转拼音",
+  "main": "dist/word-pinyin.js",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "汉字转拼音",
+    "汉字",
+    "拼音",
+    "pinyin"
+  ],
+  "author": "zhylmzr",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhylmzr/word-pinyin"
+  },
+  "bugs": {
+    "url": "https://github.com/zhylmzr/word-pinyin/issues"
+  },
+  "homepage": "https://github.com/zhylmzr/word-pinyin",
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  }
+}
