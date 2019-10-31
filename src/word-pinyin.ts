@@ -1,5 +1,14 @@
-import dictNotone from "./dict/pinyin_dict_notone";
+import dictNotoneOrigin from "./dict/pinyin_dict_notone";
 import dictFirstletter from "./dict/pinyin_dict_firstletter";
+
+// 处理拼音字典
+const dictNotone: Record<string, string> = {}
+for(var i in dictNotoneOrigin) {
+    var temp = dictNotoneOrigin[i];
+    for(var j=0, len=temp.length; j<len; j++) {
+        if(!dictNotone[temp[j]]) dictNotone[temp[j]] = i;
+    }
+}
 
 export default {
     /**
