@@ -1,8 +1,15 @@
 # word-pinyin
+[![Build Status](https://img.shields.io/travis/zhylmzr/word-pinyin/master?style=flat-square)](https://travis-ci.org/zhylmzr/word-pinyin)
+[![npm](https://img.shields.io/npm/v/word-pinyin?style=flat-square)](https://www.npmjs.com/package/word-pinyin)
+[![size](https://img.shields.io/bundlephobia/min/word-pinyin?style=flat-square)](https://bundlephobia.com/result?p=word-pinyin)
+[![download](https://img.shields.io/npm/dw/word-pinyin?style=flat-square)](https://npmcharts.com/compare/word-pinyin)
+
 Node端汉字转拼音库
 
 # 安装
-`yarn add word-pinyin`
+```js
+yarn add word-pinyin
+```
 
 # 例子
 ```js
@@ -21,4 +28,4 @@ PinYin.getFirstLetter("你好骚啊") // NHSA
 - str: 汉字
 
 # 感谢
-[pinyinjs](https://github.com/sxei/pinyinjs)
+- [pinyinjs](https://github.com/sxei/pinyinjs)
