@@ -4,7 +4,7 @@
 [![size](https://img.shields.io/bundlephobia/min/word-pinyin?style=flat-square)](https://bundlephobia.com/result?p=word-pinyin)
 [![download](https://img.shields.io/npm/dw/word-pinyin?style=flat-square)](https://npmcharts.com/compare/word-pinyin)
 
-Node端汉字转拼音库
+Node端汉字转拼音库, 针对小程序设计, 不支持多音字
 
 # 安装
 ```js
