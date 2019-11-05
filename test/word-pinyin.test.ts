@@ -1,13 +1,13 @@
 import PinYin from "../src/word-pinyin";
 
 test("get first letter", () => {
-    expect(PinYin.getFirstLetter("你好骚啊")).toBe("NHSA");
+    expect(PinYin.getFirstLetter("孙先生")).toBe("SXS");
 });
 
 test("get word's pinyin", () => {
-    expect(PinYin.getPinyin("你好骚啊")).toBe("ni hao sao a");
+    expect(PinYin.getPinyin("孙先生")).toBe("sun xian sheng");
 });
 
 test(`get word's pinyin to use ", "`, () => {
-    expect(PinYin.getPinyin("你好骚啊", ", ")).toBe("ni, hao, sao, a");
+    expect(PinYin.getPinyin("孙先生", ", ")).toBe("sun, xian, sheng");
 });
