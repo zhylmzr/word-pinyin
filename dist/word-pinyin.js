@@ -21,21 +21,21 @@ exports.default = {
      * @param splitter 分隔字符，默认用空格分隔
      */
     getPinyin: function (chinese, splitter) {
-        if (splitter === void 0) { splitter = ' '; }
+        if (splitter === void 0) { splitter = " "; }
         if (!chinese || /^ +$/g.test(chinese))
-            return '';
+            return "";
         var result = [];
-        var noChinese = '';
+        var noChinese = "";
         for (var i = 0, len = chinese.length; i < len; i++) {
             var temp = chinese.charAt(i), pinyin = dictNotone[temp];
             if (pinyin) { //插入拼音
                 //空格，把noChinese作为一个词插入
-                noChinese && (result.push(noChinese), noChinese = '');
+                noChinese && (result.push(noChinese), noChinese = "");
                 result.push(pinyin);
             }
             else if (!temp || /^ +$/g.test(temp)) {
                 //空格，插入之前的非中文字符
-                noChinese && (result.push(noChinese), noChinese = '');
+                noChinese && (result.push(noChinese), noChinese = "");
             }
             else {
                 //非空格，关联到noChinese中
@@ -44,7 +44,7 @@ exports.default = {
         }
         if (noChinese) {
             result.push(noChinese);
-            noChinese = '';
+            noChinese = "";
         }
         return result.join(splitter);
     },
@@ -54,7 +54,7 @@ exports.default = {
      */
     getFirstLetter: function (str) {
         if (!str || /^ +$/g.test(str))
-            return '';
+            return "";
         var result = [];
         for (var i = 0; i < str.length; i++) {
             var unicode = str.charCodeAt(i);
@@ -64,6 +64,6 @@ exports.default = {
             }
             result.push(ch);
         }
-        return result.join(''); // 如果不用管多音字，直接将数组拼接成字符串
-    },
+        return result.join(""); // 如果不用管多音字，直接将数组拼接成字符串
+    }
 };
