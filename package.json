@@ -1,6 +1,6 @@
 {
   "name": "word-pinyin",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "汉字转拼音",
   "main": "dist/word-pinyin.js",
   "scripts": {
