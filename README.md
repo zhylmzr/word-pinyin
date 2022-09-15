@@ -6,7 +6,12 @@
 
 Node端汉字转拼音库, 针对小程序设计, 不支持多音字
 
-# 安装
+# 用法
+
+直接复制 `word-pinyin.d.ts`, `word-pinyin.js` 文件
+
+或者
+
 ```js
 yarn add word-pinyin
 ```

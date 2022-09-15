@@ -1,4 +1,4 @@
-import PinYin from "../src/word-pinyin";
+import PinYin from "../word-pinyin";
 
 test("get first letter", () => {
     expect(PinYin.getFirstLetter("孙先生")).toBe("SXS");
